@@ -1,0 +1,211 @@
+:root {
+    --gold: #b5ab50;
+}
+
+.Home {
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(-9deg, #333333 66.66%, #ffff 66.66%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+.left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 35vw;
+    text-align: center;
+    margin-left: 10vw;
+
+}
+
+.logo {
+    width: 13vw;
+    margin-bottom: 1.7vh;
+}
+
+.caption {
+    font-family: 'ButlerBold';
+    color: var(--gold);
+    font-size: 2.5vw;
+    margin-bottom: 3vh;
+
+
+}
+
+.info {
+    font-family: 'futura';
+    color: white;
+    font-size: 1.5vw;
+
+}
+
+.right{
+    width: 5vw;
+    display: flex;
+
+}
+
+.mockups {
+    display: flex;
+    width: 45vw;
+    height: 18.375vw;
+
+}
+
+.wrap {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 35vw;
+
+}
+
+.buttonBeta {
+    flex-direction: column;
+    display: flex;
+    background-color: var(--gold); /* Green */
+    border: none;
+    color: white;
+    padding: 1vw 1vw;
+    width: 9vw;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 2vw;
+    font-family: futura;
+    font-size: 1.3vw;
+}
+
+.buttonInfo {
+    flex-direction: column;
+    display: flex;
+    background-color: grey; /* Green */
+    border: none;
+    color: white;
+    padding: 1vw 1vw;
+    width: 9vw;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 2vw;
+    font-family: futura;
+    font-size: 1.3vw;
+}
+
+.buttonBeta:hover {opacity: .8}
+.buttonInfo:hover {opacity: .8}
+
+@media only screen and (max-width: 600px){
+    .Home {
+        background-color: #333333;
+        background-image: none;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow-x: hidden;
+
+        /*align-items: center;*/
+    }
+
+    .left {
+        justify-content: center;
+
+        display: flex;
+        width: 65vw;
+        text-align: center;
+        margin-left: 0vw;
+    }
+
+    .logo {
+        width: 40vw;
+    }
+
+    .caption {
+        font-family: 'ButlerBold';
+        color: var(--gold);
+        font-size: 5vw;
+
+
+    }
+
+    .info {
+        font-family: 'futura';
+        color: white;
+        font-size: 3vw;
+
+    }
+
+    .right{
+        width: 5vw;
+        display: flex;
+
+    }
+
+    .mockups {
+        display: flex;
+        width: 60vw;
+        height: 24.500vw;
+        /*ratio: 2.4489*/
+    }
+
+    .buttonBeta {
+        flex-direction: column;
+        display: flex;
+        background-color: var(--gold); /* Green */
+        border: none;
+        color: white;
+        padding: 3vw 3vw;
+        width: 18vw;
+        text-align: center;
+        text-decoration: none;
+        opacity: 1;
+        transition: 0.3s;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 10vw;
+        font-family: futura;
+        font-size: 2.5vw;
+        margin-right: 3vw;
+    }
+
+    .buttonInfo {
+        flex-direction: column;
+        display: flex;
+        background-color: grey; /* Green */
+        border: none;
+        color: white;
+        padding: 3vw 3vw;
+        width: 18vw;
+        text-align: center;
+        text-decoration: none;
+        opacity: 1;
+        transition: 0.3s;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 10vw;
+        font-family: futura;
+        font-size: 2.5vw;
+        margin-left: 3vw;
+    }
+
+
+}
