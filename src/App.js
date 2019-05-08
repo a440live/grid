@@ -12,7 +12,6 @@ class App extends Component {
     return (
         <div>
           <Home/>
-          <Info/>
           <Info_copy/>
         </div>
     );
