@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 150vh;
+
     overflow-x: hidden;
 }
 
@@ -54,7 +54,7 @@
     width: 60vw;
     text-align: justify;
     font-family: "Proxima Nova";
-    padding-top: 350px;
+    padding-top: 200px;
     padding-bottom: 150px;
 }
 
@@ -88,9 +88,12 @@
     font-family: 'Proxima Nova';
     color: var(--gold);
     font-size: 31px;
+
     margin-bottom: 0;
     margin-top: 0vh;
     font-weight: bold;
+    text-align: left;
+    width: 100%;
 }
 
 .icon2{
@@ -145,7 +148,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 300vh;
         overflow-x: hidden;
         justify-content: stretch;
     }
@@ -158,7 +160,7 @@
         text-align: center;
         font-family: "Proxima Nova";
         padding-top: 0;
-        padding-bottom: 5vh;
+        padding-bottom: 10vh;
     }
 
     .Spacer{
@@ -173,6 +175,7 @@
         width: 100vw;
         text-align: center;
         font-family: "Proxima Nova";
+        padding-top: 0;
         padding-bottom: 10vh;
     }
 
@@ -192,7 +195,7 @@
     .data2{
         font-size: 2.5vh;
         margin-bottom: 10vh;
-        text-align: center;
+        text-align: justify;
         width: 80%;
     }
 
@@ -213,10 +216,28 @@
         border-radius: 0;
     }
 
+    .photo1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .photo2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
     .mobile{
         margin-top: 100vh;
         margin-bottom: 10vh;
 
+    }
+
+    .title3{
+        width: 80%;
     }
 
     .buttonBeta3 {
@@ -265,7 +286,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 230vh;
         overflow-x: hidden;
         justify-content: stretch;
     }
