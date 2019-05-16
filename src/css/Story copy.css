@@ -2,26 +2,59 @@
     --gold: #b5ab50;
 }
 
-@font-face {
-    font-family: 'Futura Std';
-    src: url('./../Static/Futura-Std-Light.ttf');
-}
 
-.Info_copy {
+.Story{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-
+    color: white;
     overflow-x: hidden;
-    margin-bottom: 150px;
+    background-color: black;
 }
 
-.Column2{
+.Bg{
+    display: block;
+    z-index: 1;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    opacity: 0.5;
+
+}
+
+.Coloroverlay{
+    content: "";
+    display: block;
+    z-index: -1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.4;
+    background-color: black;
+}
+
+.Row2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Column3{
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    align-items: flex-start;
+    width: 100%;
+    align-items: center;
+    font-family: "Proxima Nova";
+    padding-top: 30vh;
+    height: 40vh;
+    padding-bottom: 30vh;
+    opacity: 1;
 }
 
 .photo1{
@@ -43,24 +76,13 @@
     align-items: center;
     width: 60vw;
     text-align: left;
-    font-family: "Futura Std";
-    padding-top: 150px;
-    padding-bottom: px;
+    font-family: "Proxima Nova";
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .Spacer{
-    width: 5%
-}
-
-.Rowrev{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: 60vw;
-    text-align: left;
-    font-family: "Futura Std";
-    padding-top: 150px;
-    padding-bottom: px;
+    width: 20%
 }
 
 .h1{
@@ -89,15 +111,15 @@
     /*font-weight: bold;*/
 /*}*/
 
-.title3{
-    font-family: 'ButlerBold';
+.title4{
+    font-family: 'Proxima Nova';
     color: var(--gold);
-    font-size: 31px;
+    font-size: 8vw;
 
     margin-bottom: 0;
     margin-top: 0vh;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 
@@ -106,44 +128,42 @@
     border-radius: 5px;
 }
 
-.buttonBeta3 {
+.buttonMedium:hover {
     flex-direction: column;
     display: flex;
-    background-color: white; /* Green */
+    background-color: #000000; /* black/dark gray */
     border: 1px solid var(--gold);
     color: var(--gold);
     padding: 1vw 1vw;
-    width: 10vw;
+    width: 25vw;
     text-align: center;
     text-decoration: none;
     opacity: 1;
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 2vw;
-    font-family: "Futura Std";
-    font-size: 1.5vw;
+    font-size: 2vw;
+    border-radius: 0.5vw;
+    font-family: "Proxima Nova";
 }
 
-.buttonBeta3:hover {
+.buttonMedium {
     flex-direction: column;
     display: flex;
     background-color: var(--gold); /* Green */
     border: 1px solid var(--gold);
-    color: white;
+    color: black;
     padding: 1vw 1vw;
-    width: 10vw;
+    width: 25vw;
     text-align: center;
     text-decoration: none;
     opacity: 1;
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 2vw;
-    font-family: "Futura Std";
-    font-size: 1.5vw;
+    font-size: 2vw;
+    border-radius: 0.5vw;
+    font-family: "Proxima Nova";
 }
 
 
@@ -163,7 +183,7 @@
         align-items: center;
         width: 100vw;
         text-align: center;
-        font-family: "Futura Std";
+        font-family: "Proxima Nova";
         padding-top: 0;
         padding-bottom: 10vh;
     }
@@ -179,7 +199,7 @@
         align-items: center;
         width: 100vw;
         text-align: center;
-        font-family: "Futura Std";
+        font-family: "Proxima Nova";
         padding-top: 0;
         padding-bottom: 10vh;
     }
@@ -204,14 +224,15 @@
         width: 80%;
     }
 
-    .title2{
-        font-family: 'ButlerBold';
+    .title4{
+        font-family: 'Proxima Nova';
         color: var(--gold);
         font-size: 12vw;
         margin-bottom: 0;
         margin-top: 0;
         display: flex;
         font-weight: bold;
+        width: 80%;
     }
 
     .icon2{
@@ -241,18 +262,14 @@
 
     }
 
-    .title3{
-        width: 80%;
-    }
-
-    .buttonBeta3 {
+    .buttonMedium:hover {
         flex-direction: column;
         display: flex;
-        background-color: white; /* Green */
+        background-color: black; /* Green */
         border: 1px solid var(--gold);
         color: var(--gold);
         padding: 4vw 4vw;
-        width: 34vw;
+        width: 50vw;
         text-align: center;
         text-decoration: none;
         opacity: 1;
@@ -260,18 +277,18 @@
         text-decoration: none;
         cursor: pointer;
         font-size: 16px;
-        border-radius: 10vw;
-        font-family: "Futura Std";
-        font-size: 5vw;
+        border-radius: 2vw;
+        font-family: "Proxima Nova";
+        font-size: 4vw;
     }
-    .buttonBeta3:hover {
+    .buttonMedium {
         flex-direction: column;
         display: flex;
         background-color: var(--gold); /* Green */
         border: 1px solid var(--gold);
-        color: white;
+        color: bblack;
         padding: 4vw 4vw;
-        width: 34vw;
+        width: 50vw;
         text-align: center;
         text-decoration: none;
         opacity: 1;
@@ -279,9 +296,9 @@
         text-decoration: none;
         cursor: pointer;
         font-size: 16px;
-        border-radius: 10vw;
-        font-family: "Futura Std";
-        font-size: 5vw;
+        border-radius: 2vw;
+        font-family: "Proxima Nova";
+        font-size: 4vw;
     }
 }
 

@@ -5,6 +5,7 @@ import './App.css';
 import Home from './Pages/Home.js'
 import Info from './Pages/Info.js'
 import Info_copy from './Pages/Info_copy.js'
+import Story from './Pages/Story.js'
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <div>
           <Home/>
           <Info_copy/>
+          <Story/>
         </div>
     );
   }

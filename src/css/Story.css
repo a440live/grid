@@ -7,21 +7,37 @@
     src: url('./../Static/Futura-Std-Light.ttf');
 }
 
-.Info_copy {
+
+.Story{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-
+    color: white;
     overflow-x: hidden;
-    margin-bottom: 150px;
+    background-color: #000000;
 }
 
-.Column2{
+.Row2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Column3{
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    align-items: flex-start;
+    width: 60%;
+    align-items: center;
+    font-family: "Futura Std";
+    padding-top: 30vh;
+    height: 40vh;
+    padding-bottom: 30vh;
+    opacity: 1;
 }
 
 .photo1{
@@ -37,30 +53,9 @@
     width: 50%;
     align-items: flex-start;
 }
-.Row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 60vw;
-    text-align: left;
-    font-family: "Futura Std";
-    padding-top: 150px;
-    padding-bottom: px;
-}
 
 .Spacer{
-    width: 5%
-}
-
-.Rowrev{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: 60vw;
-    text-align: left;
-    font-family: "Futura Std";
-    padding-top: 150px;
-    padding-bottom: px;
+    width: 15%
 }
 
 .h1{
@@ -74,10 +69,10 @@
     margin-top: 12vh;
 }
 
-.data2{
+.data3{
     font-size: 2.5vh;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 /*.title2{*/
@@ -89,15 +84,15 @@
     /*font-weight: bold;*/
 /*}*/
 
-.title3{
+.title4{
     font-family: 'ButlerBold';
     color: var(--gold);
-    font-size: 31px;
+    font-size: 8vw;
 
     margin-bottom: 0;
     margin-top: 0vh;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 
@@ -106,44 +101,42 @@
     border-radius: 5px;
 }
 
-.buttonBeta3 {
+.buttonMedium:hover {
     flex-direction: column;
     display: flex;
-    background-color: white; /* Green */
+    background-color: #333333; /* black/dark gray */
     border: 1px solid var(--gold);
     color: var(--gold);
     padding: 1vw 1vw;
-    width: 10vw;
+    width: 25vw;
     text-align: center;
     text-decoration: none;
     opacity: 1;
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 2vw;
     border-radius: 2vw;
     font-family: "Futura Std";
-    font-size: 1.5vw;
 }
 
-.buttonBeta3:hover {
+.buttonMedium {
     flex-direction: column;
     display: flex;
     background-color: var(--gold); /* Green */
     border: 1px solid var(--gold);
-    color: white;
+    color: #333333;
     padding: 1vw 1vw;
-    width: 10vw;
+    width: 25vw;
     text-align: center;
     text-decoration: none;
     opacity: 1;
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 2vw;
     border-radius: 2vw;
     font-family: "Futura Std";
-    font-size: 1.5vw;
 }
 
 
@@ -157,31 +150,9 @@
         justify-content: stretch;
     }
 
-    .Row{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-        text-align: center;
-        font-family: "Futura Std";
-        padding-top: 0;
-        padding-bottom: 10vh;
-    }
-
     .Spacer{
         width: 0;
         height: 0;
-    }
-
-    .Rowrev{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-        text-align: center;
-        font-family: "Futura Std";
-        padding-top: 0;
-        padding-bottom: 10vh;
     }
 
     .Column2{
@@ -197,14 +168,14 @@
         font-size: 3.5vh;
     }
 
-    .data2{
+    .data3{
         font-size: 2.5vh;
         margin-bottom: 10vh;
-        text-align: justify;
+        text-align: center;
         width: 80%;
     }
 
-    .title2{
+    .title4{
         font-family: 'ButlerBold';
         color: var(--gold);
         font-size: 12vw;
@@ -212,6 +183,7 @@
         margin-top: 0;
         display: flex;
         font-weight: bold;
+        width: 80%;
     }
 
     .icon2{
@@ -241,18 +213,14 @@
 
     }
 
-    .title3{
-        width: 80%;
-    }
-
-    .buttonBeta3 {
+    .buttonMedium:hover {
         flex-direction: column;
         display: flex;
-        background-color: white; /* Green */
+        background-color: black; /* Green */
         border: 1px solid var(--gold);
         color: var(--gold);
         padding: 4vw 4vw;
-        width: 34vw;
+        width: 50vw;
         text-align: center;
         text-decoration: none;
         opacity: 1;
@@ -260,18 +228,18 @@
         text-decoration: none;
         cursor: pointer;
         font-size: 16px;
-        border-radius: 10vw;
+        border-radius: 7vw;
         font-family: "Futura Std";
-        font-size: 5vw;
+        font-size: 4vw;
     }
-    .buttonBeta3:hover {
+    .buttonMedium {
         flex-direction: column;
         display: flex;
         background-color: var(--gold); /* Green */
         border: 1px solid var(--gold);
-        color: white;
+        color: black;
         padding: 4vw 4vw;
-        width: 34vw;
+        width: 50vw;
         text-align: center;
         text-decoration: none;
         opacity: 1;
@@ -279,9 +247,9 @@
         text-decoration: none;
         cursor: pointer;
         font-size: 16px;
-        border-radius: 10vw;
+        border-radius: 7vw;
         font-family: "Futura Std";
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
