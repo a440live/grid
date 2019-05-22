@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 import Home from './Pages/Home.js'
-import Info from './Pages/Info.js'
 import Info_copy from './Pages/Info_copy.js'
 import Story from './Pages/Story.js'
+import Purchase from './Pages/Purchase'
 
 
 class App extends Component {
@@ -15,6 +15,7 @@ class App extends Component {
           <Home/>
           <Info_copy/>
           <Story/>
+          <Purchase/>
         </div>
     );
   }

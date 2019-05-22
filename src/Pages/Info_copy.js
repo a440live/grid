@@ -29,7 +29,7 @@ class Info extends Component {
                             artist talking about the music that matters, and more all at the tip of your fingers.
                         </p>
                         <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                            <div className = "buttonBeta3" style={{marginTop: 0}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
+                            <div className = "buttonBeta3" style={{marginTop: 0}}>
                                 Join Our Beta
                             </div>
                         </a>
