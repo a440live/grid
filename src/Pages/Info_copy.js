@@ -28,7 +28,7 @@ class Info extends Component {
                             musicians content all in one place. Enjoy live streams of concerts, videos and writings of the
                             artist talking about the music that matters, and more all at the tip of your fingers.
                         </p>
-                        <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
+                        <a style={{display: "table-cell", textDecoration: "none"}} href="/Beta" target="_blank">
                             <div className = "buttonBeta3" style={{marginTop: 0}}>
                                 Join Our Beta
                             </div>

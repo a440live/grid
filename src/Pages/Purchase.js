@@ -58,7 +58,7 @@ class Purchase extends Component {
                         <h3 className="plan-title">
                             Silver
                         </h3>
-                        <div className="plan-cost"><span className="plan-price">$99</span>
+                        <div className="plan-cost"><span className="plan-price">$7.99</span>
                         </div>
                         <ul className="plan-features">
                             <li><i className="ion-checkmark"> </i>5 FREE Subscriptions</li>
