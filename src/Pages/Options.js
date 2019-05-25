@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import '../css/Options.css';
 import piano from '../img/piano.svg';
@@ -47,10 +48,14 @@ class Options extends Component {
                             <li><i className="ion-checkmark"> </i>Receive early access to new features.</li>
                         </ul>
                         <div className="wrap2">
-                            <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                                <div className = "buttonPreorderOption">
-                                    Preorder now!
-                                </div>
+                            <a style={{display: "table-cell", textDecoration: "none"}}>
+                                <Router>
+                                    <Link to={'/purchase'} style={{ textDecoration: 'none' }}>
+                                        <div className = "buttonPreorderOption">
+                                            Preorder now!
+                                        </div>
+                                    </Link>
+                                </Router>
                             </a>
                         </div>
                     </div>

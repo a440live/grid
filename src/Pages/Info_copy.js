@@ -9,7 +9,7 @@ import place from '../img/avi-richards-183715-unsplash.jpg';
 
 const isMobile = window.innerWidth <= 600;
 
-class Info extends Component {
+class Info_copy extends Component {
     render() {
         return (
             <div className="Info_copy" id="info">
@@ -104,4 +104,4 @@ class Info extends Component {
     }
 }
 
-export default Info;
+export default Info_copy;

@@ -17,7 +17,6 @@ class App extends Component {
           <Info_copy/>
           <Options/>
           <Story/>
-          <Purchase/>
         </div>
     );
   }
