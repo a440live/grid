@@ -43,8 +43,7 @@ class Home extends Component {
                 </div>
 
                 <img src = {mockups} className="mockups" />
-
-                    <div className="scroll-down"></div>
+                <div className="scroll-down"></div>
             </div>
         );
     }
