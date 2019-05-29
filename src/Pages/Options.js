@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import {BrowserRouter as Router, Link, NavLink, Redirect} from "react-router-dom";
 
 import '../css/Options.css';
 import piano from '../img/piano.svg';
@@ -28,8 +28,8 @@ class Options extends Component {
                         </div>
                         <ul className="betainfo">
                             <li><i className="ion-checkmark"> </i>Be the first to gain access to our revolutionary platform.</li>
-                            <li><i className="ion-checkmark"> </i>Get notifications about our development process.</li>
-                            <li><i className="ion-checkmark"> </i>Receive early access to new features.</li>
+                            <li><i className="ion-checkmark"> </i>Receive notifications about our development process.</li>
+                            <li><i className="ion-checkmark"> </i>Gain early access to new features.</li>
                         </ul>
                         <div className="wrap2">
                             <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
@@ -43,19 +43,17 @@ class Options extends Component {
                     <div className="preorderside">
                         <img src={piano} alt="piano" className="piano"/>
                         <ul className="preorderinfo">
-                            <li><i className="ion-checkmark"> </i>Be the first to gain access to our revolutionary platform.</li>
-                            <li><i className="ion-checkmark"> </i>Get notifications about our development process.</li>
-                            <li><i className="ion-checkmark"> </i>Receive early access to new features.</li>
+                            <li><i className="ion-checkmark"> </i>Be the first to experience this new platform when we fully launch.</li>
+                            <li><i className="ion-checkmark"> </i>Enjoy a discounted price on your first subscription.</li>
+                            <li><i className="ion-checkmark"> </i>Help shape the roster of artists on A440.</li>
                         </ul>
                         <div className="wrap2">
                             <a style={{display: "table-cell", textDecoration: "none"}}>
-                                <Router>
-                                    <Link to={'/purchase'} style={{ textDecoration: 'none' }}>
-                                        <div className = "buttonPreorderOption">
-                                            Preorder now!
-                                        </div>
-                                    </Link>
-                                </Router>
+                                <div>
+                                    <NavLink to = "/purchase"  class = "buttonPreorderOption">
+                                        Preorder now!
+                                    </NavLink>
+                                </div>
                             </a>
                         </div>
                     </div>

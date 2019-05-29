@@ -16,14 +16,12 @@ class Purchase extends Component {
                 <div className="purchase">
                     <div className = "caption">
                         <p>
-                            Oops, looks like we aren't ready yet...
+                            We’re thrilled for you to join us on this journey!
                         </p>
                     </div>
                     <div className = "info">
                         <p>
-                            But thank you for wanting to be part of our community! Since building a community of
-                            classical music fans is one of our driving missions, we will offer you great discounts for
-                            when we release:
+                            Click the button below to securely purchase a 1 year subscription to the artist or organization of your choice for only $10.
                         </p>
                     </div>
                 </div>
