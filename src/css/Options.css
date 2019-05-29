@@ -292,6 +292,10 @@
     width: 100%;
     max-width: 1000px;
     margin: 40px 10px;
+    position: fixed;
+    left: 35%;
+    top: 60%;
+    transform: translate(-50%, -50%);
 }
 .snip1214 .plan {
     margin: 0;

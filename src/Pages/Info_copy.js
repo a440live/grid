@@ -21,18 +21,11 @@ class Info_copy extends Component {
                     </p>
                     <div className="Column2">
                         <p className="title3">
-                            Connect to music outside the concert hall
+                            Connect with artists outside the concert hall
                         </p>
                         <p className="data2">
-                            A440 lets audience members discover new artists and engage with the entirety of their favorite
-                            musicians content all in one place. Enjoy live streams of concerts, videos and writings of the
-                            artist talking about the music that matters, and more all at the tip of your fingers.
+                            A440 lets audience members engage with the entirety of their favorite musicians’ content all in one place. Enjoy not only livestreamed concerts, but also videos and writings about the music that matters and sneak peeks behind the curtain - all at the tip of your fingers.
                         </p>
-                        <a style={{display: "table-cell", textDecoration: "none"}} href="/Beta" target="_blank">
-                            <div className = "buttonBeta3" style={{marginTop: 0}}>
-                                Join Our Beta
-                            </div>
-                        </a>
                     </div>
                 </div>
                 <div className="Rowrev">
@@ -43,17 +36,11 @@ class Info_copy extends Component {
                     </p>
                     <div className="Column2">
                         <p className="title3">
-                            Follow your favorite artists and discover new ones
+                            Discover new artists and follow your favorites from anywhere in the world
                         </p>
                         <p className="data2">
-                            For the first time, A440 makes it simple and easy for any artist to live stream concerts at a high level.
-                            Manage and monetize your entire digital output from one  easy to use platform, all at no cost to you.
+                            For the first time ever, A440 makes it possible for your to discover and meaningfully engage with organizations and artists from across the nation and world, no matter where you are. Whether you want to explore ensembles in other cities, or connect better with your own city, A440 will empower you to discover amazing new musicians and follow their work regardless of where you live.
                         </p>
-                        <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                            <div className = "buttonBeta3" style={{marginTop: 0}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                                Join Our Beta
-                            </div>
-                        </a>
                     </div>
                 </div>
                 <div className="Row">
@@ -64,18 +51,11 @@ class Info_copy extends Component {
                     </p>
                     <div className="Column2">
                         <p className="title3">
-                            Livestream your performances in High Quality for free
+                            Employ our high quality technical capabilities for all of a musician’s online needs.
                         </p>
                         <p className="data2">
-                            A440 lets audience members discover new artists and engage with the entirety of their favorite
-                            musicians content all in one place. Enjoy live streams of concerts, videos and writings of the
-                            artist talking about the music that matters, and more all at the tip of your fingers.
+                            From livestreams, to HD videos, to blogs, podcasts, and more, you’ll be able to host the entirety of your digital content and explore new ways to interact and engage with your audience. Never feel constrained in your choice of medium again.
                         </p>
-                        <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                            <div className = "buttonBeta3" style={{marginTop: 0}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                                Join Our Beta
-                            </div>
-                        </a>
                     </div>
                 </div>
                 <div className="Rowrev">
@@ -86,17 +66,11 @@ class Info_copy extends Component {
                     </p>
                     <div className="Column2">
                         <p className="title3">
-                            Manage all of your output in one place
+                            Engage with your audience in the right environment.
                         </p>
                         <p className="data2">
-                            For the first time, A440 makes it simple and easy for any artist to live stream concerts at a high level.
-                            Manage and monetize your entire digital output from one  easy to use platform, all at no cost to you.
+                            A440 is a space that prioritizes long-form art and the artists who produce it. Audiences who engage with you on A440 aren’t going to scroll past your concert in their newsfeed or just look for the definitive recording of a masterwork. They’re here because you make this music special. We get that. That’s why we’re creating an environment that prioritizes you, the artist.
                         </p>
-                        <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                            <div className = "buttonBeta3" style={{marginTop: 0}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                                Join Our Beta
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>

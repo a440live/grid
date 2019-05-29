@@ -24,8 +24,8 @@ class Info extends Component {
                     </p>
                     <p className="Spacer">
                     </p>
-                    <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
-                        <div className = "buttonMedium" style={{marginTop: 0}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
+                    <a style={{display: "table-cell", textDecoration: "none"}} href="https://medium.com/@andrew_white/a440-611cecba8aac" target="_blank">
+                        <div className = "buttonMedium" style={{marginTop: 0}} href="https://medium.com/@andrew_white/a440-611cecba8aac" target="_blank">
                             Read Here
                         </div>
                     </a>

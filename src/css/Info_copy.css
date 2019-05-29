@@ -7,6 +7,59 @@
     src: url('./../Static/Futura-Std-Light.ttf');
 }
 
+@media only screen and (min-width: 800px) {
+    .caption_purchase {
+        font-family: 'ButlerBold';
+        color: var(--gold);
+        font-size: 45px;
+        position: fixed;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        overflow: scroll;
+        max-width: 600px;
+
+    }
+
+    .info_caption {
+        font-family: 'futura std';
+        color: grey;
+        font-size: 30px;
+        width: 45vw;
+        position: fixed;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .caption_purchase {
+        font-family: 'ButlerBold';
+        color: var(--gold);
+        font-size: 30px;
+        position: fixed;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        overflow: scroll;
+        max-width: 600px;
+
+    }
+
+    .info_caption {
+        font-family: 'futura std';
+        color: grey;
+        font-size: 25px;
+        width: 80vw;
+        position: fixed;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+
+    }
+}
 .Info_copy {
     display: flex;
     flex-direction: column;

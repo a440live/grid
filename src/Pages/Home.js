@@ -33,9 +33,9 @@ class Home extends Component {
                                 Join Our Beta
                             </div>
                         </a>
-                        <ScrollIntoView selector="#info">
+                        <ScrollIntoView selector="#options_section">
                             <div className = "buttonInfo">
-                                More Info
+                                Preorder now!
                             </div>
                         </ScrollIntoView>
                     </div>
@@ -43,6 +43,8 @@ class Home extends Component {
                 </div>
 
                 <img src = {mockups} className="mockups" />
+
+                    <div className="scroll-down"></div>
             </div>
         );
     }

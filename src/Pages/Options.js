@@ -13,7 +13,7 @@ const isMobile = window.innerWidth <= 600;
 class Options extends Component {
     render() {
         return (
-            <div className="Options">
+            <div className="Options" id='options_section'>
                 <div className = "getstartedrow">
                     <div className = "getstartedtext">
                         <p>
@@ -28,8 +28,8 @@ class Options extends Component {
                         </div>
                         <ul className="betainfo">
                             <li><i className="ion-checkmark"> </i>Be the first to gain access to our revolutionary platform.</li>
-                            <li><i className="ion-checkmark"> </i>Get notifications about our development process.</li>
-                            <li><i className="ion-checkmark"> </i>Receive early access to new features.</li>
+                            <li><i className="ion-checkmark"> </i>Receive notifications about our development process.</li>
+                            <li><i className="ion-checkmark"> </i>Gain early access to new features.</li>
                         </ul>
                         <div className="wrap2">
                             <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
@@ -43,9 +43,9 @@ class Options extends Component {
                     <div className="preorderside">
                         <img src={piano} alt="piano" className="piano"/>
                         <ul className="preorderinfo">
-                            <li><i className="ion-checkmark"> </i>Be the first to gain access to our revolutionary platform.</li>
-                            <li><i className="ion-checkmark"> </i>Get notifications about our development process.</li>
-                            <li><i className="ion-checkmark"> </i>Receive early access to new features.</li>
+                            <li><i className="ion-checkmark"> </i>Be the first to experience this new platform when we fully launch.</li>
+                            <li><i className="ion-checkmark"> </i>Enjoy a discounted price on your first subscription.</li>
+                            <li><i className="ion-checkmark"> </i>Help shape the roster of artists on A440.</li>
                         </ul>
                         <div className="wrap2">
                             <a style={{display: "table-cell", textDecoration: "none"}}>
