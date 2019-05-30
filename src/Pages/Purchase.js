@@ -4,13 +4,37 @@ import '../css/Info_copy.css';
 import logo from "../img/logo_white2.svg";
 import ScrollIntoView from "react-scroll-into-view";
 import mockups from "../img/mockups.png";
+import { PayPalButton } from "react-paypal-button-v2";
 
 const isMobile = window.innerWidth <= 600;
+
 
 class Purchase extends Component {
     render() {
         return (
             <div className="Home2">
+                <PayPalButton
+                    amount="0.01"
+                    onSuccess={(details, data) => {
+                        alert("Transaction completed by " + details.payer.name.given_name);
+
+                        // OPTIONAL: Call your server to save the transaction
+                        return fetch("/paypal-transaction-complete", {
+                            method: "post",
+                            body: JSON.stringify({
+                                orderID: data.orderID
+                            }),
+                            headers: {
+                                'Content-Type': 'application/json',
+                                // 'Content-Type': 'application/x-www-form-urlencoded',
+                            }
+                        });
+                    }}
+                    options={{
+                        clientId: "AVRrieiy9ScdRYdtuhm9Tjq7-n89rlTKbF9igSnwLIa43hWPY20OAyZ5iLlhy5o4EiVdSG3RIquKlBsA"
+                    }}
+                    onError={(err)=>{console.log(err)}}
+                />
                 <div className="purchase">
                     <div className = "caption">
                         <p>
@@ -38,6 +62,7 @@ class Purchase extends Component {
                             <li><i className="ion-checkmark"> </i>Access to A440 extra content</li>
                             <li><i className="empty"> </i></li>
                         </ul>
+
                         <div className="plan-select"><a href="">Select</a></div>
                     </div>
                     <div className="plan featured">
@@ -69,6 +94,7 @@ class Purchase extends Component {
                         <div className="plan-select"><a href="">Select</a></div>
                     </div>
                 </div>
+
             </div>
 
         );
