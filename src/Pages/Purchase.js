@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Route } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import '../css/Info_copy.css';
+import '../css/Home.css';
 import logo from "../img/logo_white2.svg";
 import ScrollIntoView from "react-scroll-into-view";
 import mockups from "../img/mockups.png";
@@ -12,6 +13,13 @@ class Purchase extends Component {
     render() {
         return (
             <div className="Home2">
+                <div className="wrapBackButton">
+                    <Link to={'/App'} style={{ textDecoration: 'none' }}>
+                        <div className = "buttonBack">
+                            Back
+                        </div>
+                    </Link>
+                </div>
                 <div className="purchase">
                     <div className = "caption_purchase">
                         <p>
