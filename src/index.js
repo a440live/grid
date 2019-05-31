@@ -4,6 +4,7 @@ import './index.css';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import Purchase from './Pages/Purchase';
+import Options from './Pages/Options';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -12,6 +13,7 @@ const routing = (
         <div>
             <Route exact path="/" component={App} />
             <Route path="/purchase" component={Purchase} />
+            <Route path="/options" component={Options} />
         </div>
     </Router>
 );

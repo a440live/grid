@@ -23,8 +23,8 @@
     background-color: #ffffff;
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+
     align-items: center;
     overflow-x: hidden;
     min-width: 550px;
@@ -95,6 +95,13 @@
     width: 35vw;
 }
 
+.paypal {
+    position: fixed;
+    left: 55%;
+    top: 50%;
+}
+
+
 .wrapBackButton {
     margin-top: 0;
     display: flex;
@@ -102,6 +109,9 @@
     justify-content: space-evenly;
     align-items: flex-start;
     width: 35vw;
+    position: fixed;
+    top: 5%;
+    left: 5%;
 }
 
 .buttonBack {
@@ -283,6 +293,7 @@
     width: 100%;
     max-width: 1000px;
     margin: 40px 10px;
+
 }
 .snip1214 .plan {
     margin: 0;
