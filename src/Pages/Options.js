@@ -49,13 +49,11 @@ class Options extends Component {
                         </ul>
                         <div className="wrap2">
                             <a style={{display: "table-cell", textDecoration: "none"}}>
-                                <Router>
-                                    <Link to={'/purchase'} style={{ textDecoration: 'none' }}>
-                                        <div className = "buttonPreorderOption">
-                                            Preorder now!
-                                        </div>
-                                    </Link>
-                                </Router>
+                                <Link to={'/purchase'} style={{ textDecoration: 'none' }}>
+                                    <div className = "buttonPreorderOption">
+                                        Preorder now!
+                                    </div>
+                                </Link>
                             </a>
                         </div>
                     </div>

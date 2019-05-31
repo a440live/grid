@@ -12,7 +12,7 @@ const isMobile = window.innerWidth <= 600;
 class Info_copy extends Component {
     render() {
         return (
-            <div className="Info_copy" id="info">
+            <div className="Info_copy" id="info_copy_section">
                 <div className="Row">
                     <div className="photo1">
                         <img src = {headphones} alt = "headphones" className="icon2"/>

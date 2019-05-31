@@ -10,7 +10,7 @@
 
 .Options {
     background-color: white;
-    background-image: -webkit-linear-gradient(-9deg, #ffff 49%, var(--gold) 49%);
+    background-image: -webkit-linear-gradient(-9deg, #ffff 50%, var(--gold) 50%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,16 +21,16 @@
 
 .atom {
     fill: var(--gold);
-    width: 65%
+    width: 45%
 }
 
 .piano {
      fill: white;
-     width: 65%
+     width: 45%
  }
 
 .getstartedrow {
-    margin-bottom: 3vh;
+    margin-bottom: 0;
     justify-content: left;
     width: 60%;
 }
@@ -39,7 +39,7 @@
     font-family: 'ButlerBold';
     text-align: left;
     color: var(--gold);
-    font-size: 4vw;
+    font-size: 3vw;
     width: 50%;
 }
 
@@ -95,12 +95,12 @@
     font-family: 'futura std';
     color: black;
     font-size: 1.5vw;
-    width: 80%;
+    width: 70%;
     margin-top: 5vh;
 
     list-style: outside none none;
     text-align: left;
-    line-height: 5vh;
+    line-height: 4vh;
 }
 
 .preorderinfo {
@@ -112,7 +112,7 @@
 
     list-style: outside none none;
     text-align: left;
-    line-height: 5vh;
+    line-height: 4vh;
 }
 
 .mockups {
@@ -128,7 +128,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 35vw;
-    margin-bottom: 20vh;
+    margin-bottom: 0;
 }
 
 .buttonBetaOption {

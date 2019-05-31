@@ -41,9 +41,10 @@ class Home extends Component {
                     </div>
 
                 </div>
-
                 <img src = {mockups} className="mockups" />
-                <div className="scroll-down"></div>
+                <ScrollIntoView selector="#info_copy_section">
+                    <div className="scroll-down"></div>
+                </ScrollIntoView>
             </div>
         );
     }

@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Route } from "react-router-dom";
 
 import '../css/Info_copy.css';
-
+import logo from "../img/logo_white2.svg";
+import ScrollIntoView from "react-scroll-into-view";
+import mockups from "../img/mockups.png";
 
 const isMobile = window.innerWidth <= 600;
 
