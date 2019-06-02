@@ -5,6 +5,7 @@ import logo from '../img/logo_white2.svg';
 import mockups from '../img/mockups.png';
 
 import ScrollIntoView from 'react-scroll-into-view'
+import {Link} from "react-router-dom";
 
 const isMobile = window.innerWidth <= 600;
 
@@ -33,11 +34,11 @@ class Home extends Component {
                                 Join Our Beta
                             </div>
                         </a>
-                        <ScrollIntoView selector="#options_section">
+                        <Link to={'/purchase'} style={{ textDecoration: 'none' }}>
                             <div className = "buttonInfo">
                                 Preorder now!
                             </div>
-                        </ScrollIntoView>
+                        </Link>
                     </div>
 
                 </div>
