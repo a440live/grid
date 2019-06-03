@@ -1,13 +1,15 @@
-.Home2{
-    background-color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 414px) {
+    .Home2 {
+        background-color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
 
-    align-items: center;
-    overflow-x: hidden;
-    min-width: 550px;
-    position: relative;
+        align-items: center;
+        overflow-x: hidden;
+        min-width: 550px;
+        position: relative;
+    }
 }
 
 .wrapBackButton {
@@ -46,24 +48,31 @@
     color: white;
 }
 
-.purchase{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 100vw;
-    text-align: center;
+@media only screen and (min-width: 414px){
+    .purchase {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100vw;
+        text-align: center;
 
+    }
 }
 
-.paypal {
+@media only screen and (min-width: 414px){
+    .paypal {
+    }
 }
 
-.bottom_half {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+@media only screen and (min-width: 414px) {
+    .bottom_half {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
+
 
 @media only screen and (min-width: 800px) {
     .caption_purchase {
@@ -110,119 +119,140 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:800);
-.snip1214 {
-    font-family: 'Futura Std';
-    color: #000000;
-    text-align: center;
-    font-size: 16px;
-    width: 100%;
-    max-width: 1000px;
-    margin: 40px 10px;
-    position: static;
-}
-.snip1214 .plan {
-    margin: 0;
-    width: 25%;
-    position: relative;
-    display: inline-block;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.snip1214 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    /*border-radius: 50px;*/
-}
-.snip1214 header {
-    position: relative;
-}
-.snip1214 .plan-title {
-    position: relative;
-    top: 0;
-    font-weight: 800;
-    padding: 5px 15px;
-    margin: 0 auto;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin: 0;
-    display: inline-block;
-    background-color: #222f3d;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-.snip1214 .plan-cost {
-    padding: 0px 10px 20px;
-}
-.snip1214 .plan-price {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 800;
-    font-size: 2.4em;
-    color: #34495e;
-}
-.snip1214 .plan-type {
-    opacity: 0.6;
-}
-.snip1214 .plan-features {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    list-style: outside none none;
-    font-size: 0.8em;
+@media only screen and (min-width: 414px){
+    .snip1214 {
+        font-family: 'Futura Std';
+        color: #000000;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        max-width: 1000px;
+        margin-left: auto;
+        position: static;
+    }
+    .snip1214 .plan {
+        margin: 0;
+        width: 25%;
+        position: relative;
+        display: inline-block;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
 
-}
-.snip1214 .plan-features li {
-    border-top: 1px solid #d2d7e2;
-    padding: 10px 5%;
-}
-.snip1214 .plan-features li:nth-child(even) {
-    background: rgba(0, 0, 0, 0.08);
-}
-.snip1214 .plan-features i {
-    margin-right: 8px;
-    opacity: 0.4;
-}
-.snip1214 .plan-select {
-    border-top: 1px solid #d2d7e2;
-    padding: 10px 10px 0;
-}
-.snip1214 .plan-select a {
-    background-color: #222f3d;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
-    font-weight: 800;
-    text-transform: uppercase;
-    display: inline-block;
-}
-.snip1214 .plan-select a:hover {
-    background-color: #46627f;
-}
-.snip1214 .featured {
-    margin-top: -10px;
-    background-color: var(--gold);
-    color: #ffffff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    width: 200px;
-    margin-right: 5rem;
-}
-.snip1214 .featured .plan-title,
-.snip1214 .featured .plan-price {
-    color: #ffffff;
-}
-.snip1214 .featured .plan-cost {
-    padding: 10px 10px 20px;
-}
-.snip1214 .featured .plan-features li {
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-}
-.snip1214 .featured .plan-select {
-    padding: 20px 10px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    .snip1214 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /*border-radius: 50px;*/
+    }
 
+    .snip1214 header {
+        position: relative;
+    }
+
+    .snip1214 .plan-title {
+        position: relative;
+        top: 0;
+        font-weight: 800;
+        padding: 5px 15px;
+        margin: 0 auto;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin: 0;
+        display: inline-block;
+        background-color: #222f3d;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .snip1214 .plan-cost {
+        padding: 0px 10px 20px;
+    }
+
+    .snip1214 .plan-price {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 800;
+        font-size: 2.4em;
+        color: #34495e;
+    }
+
+    .snip1214 .plan-type {
+        opacity: 0.6;
+    }
+
+    .snip1214 .plan-features {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        list-style: outside none none;
+        font-size: 0.8em;
+
+    }
+
+    .snip1214 .plan-features li {
+        border-top: 1px solid #d2d7e2;
+        padding: 10px 5%;
+    }
+
+    .snip1214 .plan-features li:nth-child(even) {
+        background: rgba(0, 0, 0, 0.08);
+    }
+
+    .snip1214 .plan-features i {
+        margin-right: 8px;
+        opacity: 0.4;
+    }
+
+    .snip1214 .plan-select {
+        border-top: 1px solid #d2d7e2;
+        padding: 10px 10px 0;
+    }
+
+    .snip1214 .plan-select a {
+        background-color: #222f3d;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+        font-weight: 800;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .snip1214 .plan-select a:hover {
+        background-color: #46627f;
+    }
+
+    .snip1214 .featured {
+        margin-top: -10px;
+        background-color: var(--gold);
+        color: #ffffff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        width: 200px;
+        margin-right: 5rem;
+    }
+
+    .snip1214 .featured .plan-title,
+    .snip1214 .featured .plan-price {
+        color: #ffffff;
+    }
+
+    .snip1214 .featured .plan-cost {
+        padding: 10px 10px 20px;
+    }
+
+    .snip1214 .featured .plan-features li {
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .snip1214 .featured .plan-select {
+        padding: 20px 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+    }
 }
+
 @media only screen and (max-width: 767px) {
     .snip1214 .plan {
         width: 50%;
@@ -246,6 +276,198 @@
 }
 @media only screen and (max-width: 440px) {
     .snip1214 .plan {
-        width: 100%;
+        width: 118%;
     }
+}
+
+@media only screen and (max-width: 414px) {
+    .snip1214 {
+        font-family: 'Futura Std';
+        color: #000000;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        max-width: 1000px;
+        margin-left: 5rem;
+        position: static;
+    }
+    .purchase {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100vw;
+        text-align: center;
+
+    }
+    .bottom_half {
+        display: flex;
+        align-items: center;
+    }
+    .paypal {
+        position: absolute;
+        left: 5rem;
+        bottom: -100px;
+    }
+    .Home2 {
+        background-color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        align-items: end;
+        overflow-x: hidden;
+        min-width: 550px;
+        position: relative;
+    }
+    .snip1214 {
+        font-family: 'Futura Std';
+        color: #000000;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        max-width: 1000px;
+        position: center;
+        margin-bottom: 20px;
+    }
+    .caption_purchase {
+        font-family: 'ButlerBold';
+        color: var(--gold);
+        font-size: 20px;
+
+        overflow: scroll;
+        max-width: 600px;
+
+    }
+
+    .info_caption {
+        font-family: 'futura std';
+        color: grey;
+        font-size: 20px;
+        width: 80vw;
+        margin-top: -3vw;
+
+    }
+    .snip1214 .plan {
+        margin: 0;
+        width: 25%;
+        position: relative;
+        display: inline-block;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .snip1214 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /*border-radius: 50px;*/
+    }
+
+    .snip1214 header {
+        position: relative;
+    }
+
+    .snip1214 .plan-title {
+        position: relative;
+        top: 0;
+        font-weight: 800;
+        padding: 5px 15px;
+        margin: 0 auto;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin: 0;
+        display: inline-block;
+        background-color: #222f3d;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .snip1214 .plan-cost {
+        padding: 0px 10px 20px;
+    }
+
+    .snip1214 .plan-price {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 800;
+        font-size: 2.4em;
+        color: #34495e;
+    }
+
+    .snip1214 .plan-type {
+        opacity: 0.6;
+    }
+
+    .snip1214 .plan-features {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        list-style: outside none none;
+        font-size: 0.8em;
+
+    }
+
+    .snip1214 .plan-features li {
+        border-top: 1px solid #d2d7e2;
+        padding: 10px 5%;
+    }
+
+    .snip1214 .plan-features li:nth-child(even) {
+        background: rgba(0, 0, 0, 0.08);
+    }
+
+    .snip1214 .plan-features i {
+        margin-right: 8px;
+        opacity: 0.4;
+    }
+
+    .snip1214 .plan-select {
+        border-top: 1px solid #d2d7e2;
+        padding: 10px 10px 0;
+    }
+
+    .snip1214 .plan-select a {
+        background-color: #222f3d;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+        font-weight: 800;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .snip1214 .plan-select a:hover {
+        background-color: #46627f;
+    }
+
+    .snip1214 .featured {
+        margin-top: -10px;
+        background-color: var(--gold);
+        color: #ffffff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        width: 200px;
+        margin-right: 5rem;
+    }
+
+    .snip1214 .featured .plan-title,
+    .snip1214 .featured .plan-price {
+        color: #ffffff;
+    }
+
+    .snip1214 .featured .plan-cost {
+        padding: 10px 10px 20px;
+    }
+
+    .snip1214 .featured .plan-features li {
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .snip1214 .featured .plan-select {
+        padding: 20px 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+    }
+
 }
