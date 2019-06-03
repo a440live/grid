@@ -329,6 +329,7 @@
         max-width: 1000px;
         position: center;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
     .caption_purchase {
         font-family: 'ButlerBold';
