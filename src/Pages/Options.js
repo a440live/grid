@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import '../css/Options.css';
-import piano from '../img/piano.svg';
+import piano from '../img/pianoman.png';
 import mockups from '../img/mockups.png';
 
 import ScrollIntoView from 'react-scroll-into-view'
