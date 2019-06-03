@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import '../css/Options.css';
-// import piano from '../img/pianoman.png';
+import piano from '../img/pianoman.png';
 import mockups from '../img/mockups.png';
 
 import ScrollIntoView from 'react-scroll-into-view'
@@ -41,7 +41,7 @@ class Options extends Component {
 
                     </div>
                     <div className="preorderside">
-                        {/*<img src={piano} alt="piano" className="piano"/>*/}
+                        <img src={piano} alt="piano" className="piano"/>
                         <ul className="preorderinfo">
                             <li><i className="ion-checkmark"> </i>Be the first to experience this new platform when we fully launch.</li>
                             <li><i className="ion-checkmark"> </i>Enjoy a discounted price on your first subscription.</li>
