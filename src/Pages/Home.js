@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 import '../css/Home.css';
 import logo from '../img/logo_white2.svg';
@@ -9,8 +10,25 @@ import {Link} from "react-router-dom";
 
 const isMobile = window.innerWidth <= 600;
 
-
+/**
+ * Event - Add custom tracking event.
+ * @param {string} category
+ * @param {string} action
+ * @param {string} label
+ */
+export const Event = (category, action, label) => {
+    ReactGA.event({
+        category: category,
+        action: action,
+        label: label
+    });
+};
 class Home extends Component {
+
+    componentDidMount(){
+        ReactGA.initialize('UA-141786654-1');
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }
     render() {
         return (
             <div className="Home">
@@ -34,7 +52,10 @@ class Home extends Component {
                                 Join Our Beta
                             </div>
                         </a>
-                        <Link to={'/purchase'} style={{ textDecoration: 'none' }}>
+                        <Link to={'/purchase'} style={{ textDecoration: 'none' }}
+                        onClick={() => {
+                            Event("PURCHASE", "Product added to cart", "PURCHASE_PAGE")
+                        }}>
                             <div className = "buttonInfo">
                                 Preorder now!
                             </div>
