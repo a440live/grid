@@ -8,6 +8,8 @@ import Options from './Pages/Options';
 
 import * as serviceWorker from './serviceWorker';
 
+
+
 const routing = (
     <Router>
         <div>

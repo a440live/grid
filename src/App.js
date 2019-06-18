@@ -15,9 +15,14 @@ import Story from './Pages/Story.js'
 import Purchase from './Pages/Purchase'
 import Options from './Pages/Options'
 import Purchase_Mobile from './Pages/Purchase_Mobile'
+import ReactGA from "react-ga";
 
 
 class App extends Component {
+    componentWillMount(){
+        ReactGA.initialize('UA-141786654-1');
+
+    }
   render() {
     return (
         <div>
