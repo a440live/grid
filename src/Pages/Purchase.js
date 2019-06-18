@@ -6,10 +6,14 @@ import logo from "../img/logo_white2.svg";
 import ScrollIntoView from "react-scroll-into-view";
 import mockups from "../img/mockups.png";
 import { PayPalButton } from "react-paypal-button-v2";
+import ReactGA from "react-ga";
 
 const isMobile = window.innerWidth <= 600;
 
 class Purchase extends Component {
+    componentWillMount(){
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }
     render() {
         return (
             <div className="Home2">

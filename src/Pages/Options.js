@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import '../css/Options.css';
-import piano from '../img/piano.svg';
+import piano from '../img/whitePianist.png';
 import mockups from '../img/mockups.png';
 
 import ScrollIntoView from 'react-scroll-into-view'
+import {Event} from "./Home";
 
 const isMobile = window.innerWidth <= 600;
 
@@ -32,7 +33,10 @@ class Options extends Component {
                             <li><i className="ion-checkmark"> </i>Gain early access to new features.</li>
                         </ul>
                         <div className="wrap2">
-                            <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
+                            <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank"
+                               onClick={() => {
+                                   Event("BETA", "Clicked to beta signup", "BETA_PAGE")
+                               }}>
                                 <div className = "buttonBetaOption">
                                     Join Our Beta
                                 </div>
@@ -49,7 +53,10 @@ class Options extends Component {
                         </ul>
                         <div className="wrap2">
                             <a style={{display: "table-cell", textDecoration: "none"}}>
-                                <Link to={'/purchase'} style={{ textDecoration: 'none' }}>
+                                <Link to={'/purchase'} style={{ textDecoration: 'none' }}
+                                      onClick={() => {
+                                          Event("PURCHASE", "Clicked to purchase page", "PURCHASE_PAGE")
+                                      }}>
                                     <div className = "buttonPreorderOption">
                                         Preorder now!
                                     </div>

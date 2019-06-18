@@ -26,7 +26,6 @@ export const Event = (category, action, label) => {
 class Home extends Component {
 
     componentDidMount(){
-        ReactGA.initialize('UA-141786654-1');
         ReactGA.pageview(window.location.pathname + window.location.search);
     }
     render() {
@@ -46,15 +45,19 @@ class Home extends Component {
                             Livestreams, videos, and blogs from all your favorite artists, all in one place.
                         </p>
                     </div>
-                    <div className="wrap">
-                        <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank">
+                    <div className="wrap"
+                         onClick={() => {
+                             Event("BETA", "Clicked to beta signup", "BETA_PAGE")
+                         }}>
+                        <a style={{display: "table-cell", textDecoration: "none"}} href="https://danny235320.typeform.com/to/iJ2NhH" target="_blank"
+                           >
                             <div className = "buttonBeta">
                                 Join Our Beta
                             </div>
                         </a>
                         <Link to={'/purchase'} style={{ textDecoration: 'none' }}
                         onClick={() => {
-                            Event("PURCHASE", "Product added to cart", "PURCHASE_PAGE")
+                            Event("PURCHASE", "Clicked to purchase page", "PURCHASE_PAGE")
                         }}>
                             <div className = "buttonInfo">
                                 Preorder now!
